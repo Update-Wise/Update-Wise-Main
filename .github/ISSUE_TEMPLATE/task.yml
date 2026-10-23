@@ -1,0 +1,65 @@
+
+name: "🛠️ Technical Task"
+description: "Track implementation, refactoring, or maintenance work."
+title: "[TASK] "
+labels:
+  - task
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What specific outcome should this task achieve?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Technical Context
+      description: Explain the rationale and affected components.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Specify what is included and excluded from this task.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: Define objective conditions for considering this task complete.
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies and Blockers
+      description: List prerequisite issues, decisions, or components.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Technical Area
+      options:
+        - Architecture
+        - C++ Core
+        - Hardware Providers
+        - Monitoring
+        - Graphical User Interface
+        - Testing
+        - CI/CD and Tooling
+        - Documentation
+        - Web and Services
+        - Other
+    validations:
+      required: true

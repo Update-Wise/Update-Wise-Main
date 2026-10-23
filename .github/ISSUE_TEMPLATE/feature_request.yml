@@ -1,0 +1,57 @@
+
+name: "✨ Feature Request"
+description: "Suggest a new feature or improvement for UpdateWise."
+title: "[FEATURE] "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We appreciate your ideas for improving UpdateWise.
+        Please describe the problem before proposing a solution.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or Need
+      description: What difficulty or unmet need have you identified?
+      placeholder: "As a user, I find it difficult to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: How could UpdateWise address this problem?
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: What other solutions could work?
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected Area
+      options:
+        - User Interface
+        - Hardware Detection
+        - Scoring System
+        - Hardware Upgrade Recommendations
+        - Operating System Compatibility
+        - Performance
+        - Documentation
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Information
+      description: Include examples, references, or useful context.
